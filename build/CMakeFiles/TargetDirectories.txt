@@ -1,0 +1,8 @@
+/home/adriano/workspace/TTP/build/CMakeFiles/edit_cache.dir
+/home/adriano/workspace/TTP/build/CMakeFiles/rebuild_cache.dir
+/home/adriano/workspace/TTP/build/src/CMakeFiles/edit_cache.dir
+/home/adriano/workspace/TTP/build/src/CMakeFiles/rebuild_cache.dir
+/home/adriano/workspace/TTP/build/src/CMakeFiles/lttp.dir
+/home/adriano/workspace/TTP/build/application/CMakeFiles/edit_cache.dir
+/home/adriano/workspace/TTP/build/application/CMakeFiles/rebuild_cache.dir
+/home/adriano/workspace/TTP/build/application/CMakeFiles/ttp.dir

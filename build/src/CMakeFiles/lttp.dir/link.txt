@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/liblttp.a  CMakeFiles/lttp.dir/railway.cpp.o CMakeFiles/lttp.dir/schedulingDecoder.cpp.o CMakeFiles/lttp.dir/schedulingEval.cpp.o CMakeFiles/lttp.dir/schedulingInit.cpp.o CMakeFiles/lttp.dir/schedulingSwap.cpp.o CMakeFiles/lttp.dir/schedulingValid.cpp.o CMakeFiles/lttp.dir/schedulingXover.cpp.o
+/usr/bin/ranlib ../lib/liblttp.a
