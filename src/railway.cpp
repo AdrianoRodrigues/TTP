@@ -25,7 +25,7 @@ struct TTrain {
 struct TSection {
 	unsigned ID;
 	unsigned capacity;
-	std::vector<unsigned> occup(capacity);
+	std::vector<unsigned> occup;
 };
 
 int myrandom (int i) {
