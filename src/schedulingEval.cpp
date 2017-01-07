@@ -174,11 +174,11 @@ unsigned SchedulingEval::process(std::vector<unsigned> & _schedulingDecoded) {
 			unsigned nextSection = section + direction;
 			unsigned prevSection = section - direction;
 
-			std::cout << "[" << train << ", " << section << ", " << headway << "]" << " Train="
-					<< train << "; Direction=" << direction << "; Operation="
-					<< operation << "; prevSection=" << prevSection
-					<< "; Section=" << section << "; nextSection="
-					<< nextSection;
+			std::cout << "[" << train << ", " << section << ", " << headway
+					<< "]" << " Train=" << train << "; Direction=" << direction
+					<< "; Operation=" << operation << "; prevSection="
+					<< prevSection << "; Section=" << section
+					<< "; nextSection=" << nextSection;
 
 //			/** verifica os deadlocks */
 //			if (vectDeadlocks.size() > 0) {
@@ -252,7 +252,8 @@ unsigned SchedulingEval::process(std::vector<unsigned> & _schedulingDecoded) {
 					mapSectionQtdOccupations[section] += 1;
 					mapSectionReleaseTime[section] += headway;
 				} else {
-					std::cout << "train " << train << " arrival in destiny" << std::endl;
+					std::cout << "train " << train << " arrival in destiny"
+							<< std::endl;
 				}
 
 				if (operation > 0) {

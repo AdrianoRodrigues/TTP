@@ -9,7 +9,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 ######################################################################################
 
 ######################################################################################
-### 2) Define your target(s): just the tsp lib here
+### 2) Define your target(s): just the ttp lib here
 ######################################################################################
 
 set(TTP_LIB_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib)
