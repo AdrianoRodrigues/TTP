@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
 
 	const double T_SIZE = 0.7;           // StochTournament rate
 	const unsigned int POP_SIZE = 5;     // tamanho da populacao
-	const unsigned int ITERATIONS = 5; // quantidade de iteracoes
+	const unsigned int ITERATIONS = 5;   // quantidade de iteracoes
 	const float CROSS_RATE = 0.8;        // taxa de crossover
 	const float MUT_RATE = 0.9;          // taxa de mutacao
 

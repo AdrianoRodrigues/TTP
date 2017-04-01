@@ -28,7 +28,7 @@ struct TSection {
 	std::vector<unsigned> occup;
 };
 
-int myrandom (int i) {
+int myrandom(int i) {
 	return rng.random(i);
 }
 
@@ -97,11 +97,11 @@ void Railway::load(const char* _fileName) {
 			lineSS >> train >> track >> origin >> destiny;
 
 			if (destiny < origin)
-							direction = -1;
+				direction = -1;
 
-			std::cout << "Train = " << train << "; Direction = " << direction << "; Track = " << track
-					<< "; Origin = " << origin << "; Destiny = " << destiny
-					<< std::endl;
+			std::cout << "Train = " << train << "; Direction = " << direction
+					<< "; Track = " << track << "; Origin = " << origin
+					<< "; Destiny = " << destiny << std::endl;
 
 			mapTrainDirection[train] = direction;
 
@@ -132,7 +132,8 @@ void Railway::load(const char* _fileName) {
 //		}
 
 		// embaralha o vetor
-		std::random_shuffle(vectOperations.begin(), vectOperations.end(), myrandom);
+		std::random_shuffle(vectOperations.begin(), vectOperations.end(),
+				myrandom);
 
 		std::cout << "Vetor de operacoes: " << std::endl;
 		for (unsigned i : vectOperations)

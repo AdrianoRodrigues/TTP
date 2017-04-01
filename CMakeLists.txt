@@ -2,7 +2,7 @@
 ### 1) Set your application properties
 ######################################################################################
 # check cmake version compatibility
-cmake_minimum_required(VERSION 2.8 FATAL_ERROR) 
+cmake_minimum_required(VERSION 3.5) 
 
 # Here define your project name
 project(TTP)
@@ -11,12 +11,10 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11") # enable C++11 standard
 
 # Here define the name and the version of your package
 set(PACKAGE_NAME "packageName" CACHE STRING "Package name" FORCE)
-
 set(PACKAGE_VERSION "versionNumber" CACHE STRING "Package version" FORCE)
 
 # set a language for the entire project.
 enable_language(CXX)
-
 enable_language(C)
 
 # find a OpenMP library to use in eoParallel.
@@ -35,6 +33,8 @@ find_package(Paradiseo)
 
 include_directories(${PARADISEO_INCLUDE_DIR})
 
+link_directories(${PARADISEO_ROOT}/build/eo/lib/)
+
 ######################################################################################
 
 ######################################################################################
@@ -52,7 +52,7 @@ include(CheckLibraryExists)
 
 # Manage the build type
 # the user should choose the build type on windows environments,excepted under cygwin (default=none)
-set(CMAKE_DEFAULT_BUILD_TYPE "Release" CACHE STRING "Variable that stores the default CMake build type" FORCE)
+set(CMAKE_DEFAULT_BUILD_TYPE "none" CACHE STRING "Variable that stores the default CMake build type" FORCE)
 
 if(CMAKE_BUILD_TYPE MATCHES Debug)
     add_definitions(-DCMAKE_VERBOSE_MAKEFILE=ON)
